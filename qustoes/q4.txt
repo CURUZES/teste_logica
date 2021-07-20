@@ -1,0 +1,28 @@
+using System;
+using System.Linq;
+
+namespace c_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+      
+
+    int notas2=10;
+    int notas5=10;
+    int notas10=10;
+    int notas20 =10;
+    int notas50 =10;
+    int notas100=10;
+    int notas200 =10;
+
+    if(notas2==0 || notas5 ==0 || notas10 ==0 || notas20 ==0 || notas50 ==0 || notas100 ==0 || notas200 ==0){
+
+    }
+
+
+        }
+    }
+}   
+    

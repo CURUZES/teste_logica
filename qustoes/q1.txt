@@ -1,0 +1,70 @@
+using System;
+using System.Linq;
+
+namespace c_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            
+               Console.WriteLine("Valor que deseja retirar: ");
+               int saque = Int32.Parse(Console.ReadLine()); 
+              
+
+                Console.WriteLine("N° de cédulas de 200$: " + (saque/200));
+                  saque %= 200;
+                     
+                     if(saque>10){
+                     Console.WriteLine("Valor do saque inválido");
+                  }
+
+
+               Console.WriteLine("N° de cédulas de 100$: " + (saque/100));
+                  saque %= 100;
+
+                  if(saque>10){
+                     Console.WriteLine("Valor do saque inválido");
+                  }
+
+
+               Console.WriteLine("N° de cédulas de 50$: " + (saque/50));
+                  saque %= 50;
+
+                  if(saque>10){
+                     Console.WriteLine("Valor do saque inválido");
+                  }
+
+               Console.WriteLine("N° de cédulas de 20$: " + (saque/20));
+               saque %= 20;
+
+                  if(saque>10){
+                     Console.WriteLine("Valor do saque inválido");
+                  }
+               
+               Console.WriteLine("N° de cédulas de 10$: " + (saque/10));
+               saque %= 10;
+
+                  if(saque>10){
+                  Console.WriteLine("Valor do saque inválido");
+               }
+
+               Console.WriteLine("N° de cédulas de 5$: " + (saque/5));
+               saque %= 5;
+
+                  if(saque>10){
+                     Console.WriteLine("Valor do saque inválido");
+                  }
+
+               Console.WriteLine("N° de cédulas de 2$: " + (saque/2));
+               saque %= 2;
+
+               if(saque>10){
+                     Console.WriteLine("Valor do saque inválido");
+                  }                 
+
+        
+        }    
+    }
+} 

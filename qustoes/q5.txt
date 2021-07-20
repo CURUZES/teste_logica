@@ -1,0 +1,37 @@
+using System;
+using System.Text;
+
+namespace c_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+    string str1, str2, _reversestr = string.Empty;  
+    Console.Write("String 1: ");  
+    str1 = Console.ReadLine();  
+
+    Console.Write("String 2: ");  
+    str2 = Console.ReadLine();  
+     string strt= str1+str2;
+
+    if (strt != null)  
+    {  
+        for (int i = strt.Length - 1; i >= 0; i--)  
+        {  
+            _reversestr += strt[i].ToString();  
+        }  
+        if (_reversestr == strt)  
+        {  
+            Console.WriteLine("S é palíndromo, pois a entrada é: {0} e a saída é: {1}", strt, _reversestr);  
+        }  
+        else  
+        {  
+            Console.WriteLine("S não é palíndromo, pois a entrada é: {0} e a saída é: {1}", strt, _reversestr);  
+        }  
+    }  
+        
+        }    
+    }
+} 

@@ -1,0 +1,64 @@
+using System;
+using System.Linq;
+
+namespace c_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+      
+    Console.WriteLine("nota 1:");
+           int n1 = Int32.Parse(Console.ReadLine());              
+            int mult1 = n1 % 5;
+            
+            if (mult1==3){
+                n1+=2;
+            } else if (mult1 ==4){
+                n1+=1;
+            }
+
+ Console.WriteLine("nota 2:");
+           int n2 = Int32.Parse(Console.ReadLine());              
+            int mult2 = n2 % 5;
+            
+            if (mult2==3){
+                n2+=2;
+            } else if (mult2 ==4){
+                n2+=1;
+            }
+
+ Console.WriteLine("nota 3:");
+           int n3 = Int32.Parse(Console.ReadLine());              
+            int mult3 = n3 % 5;
+            
+            if (mult3==3){
+                n3+=2;
+            } else if (mult3 ==4){
+                n3+=1;
+            } 
+
+ Console.WriteLine("nota 4:");
+           int n4 = Int32.Parse(Console.ReadLine());              
+            int mult4 = n3 % 5;
+            
+            if (mult4==3){
+                n4+=2;
+            } else if (mult4 ==4){
+                n4+=1;
+            } 
+     
+    int media = (n1+n2+n3+n4)/4;
+
+    if (media<=40){
+        Console.WriteLine("Aluno reprovado, pois sua média é menor que 40.");
+    }
+    else
+    {
+        Console.WriteLine("com media "+media+" o aluno foi aprovado.");
+    }
+    
+        }
+    }
+}   
+    
